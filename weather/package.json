@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "dev": "npm run build && npm run start"
+  },
+  "author": "juanjofrelopez",
+  "license": "ISC"
+}
