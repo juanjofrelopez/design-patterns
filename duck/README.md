@@ -1,10 +1,3 @@
-## OOP Principles
-
-- Encapsulate what varies.
-- Favor composition over inheritance.
-- Program to interfaces, not implementations.
-- Think at the pattern level, note the object level.
-
 ## Strategy Pattern
 
 ```
@@ -28,6 +21,13 @@ behaviors "implementing" QuackBehavior.
 
 Instead of inheriting their behavior, the ducks get their behavior by being composed with the right behavior object. We are encapsulating a family of algorithms.
 It also allow us to change behavior at runtime as long as the class implements the right interface.
+
+### OOP Principles
+
+- Encapsulate what varies.
+- Favor composition over inheritance.
+- Program to interfaces, not implementations.
+- Think at the pattern level, note the object level.
 
 #### Exercise: Duck Call
 
