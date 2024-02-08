@@ -24,7 +24,7 @@ export default class WeatherData implements Subject {
 
   notifyObservers(): void {
     this.observers.forEach((o: Observer) => {
-      o.update(this.temperature, this.humidity, this.pressure);
+      o.update();
     });
   }
 
@@ -45,14 +45,14 @@ export default class WeatherData implements Subject {
   }
 
   getTemperature() {
-    return "most recent temperature!";
+    return this.temperature;
   }
 
   getHumidity() {
-    return "most recent humidity!";
+    return this.humidity;
   }
 
   getPressure() {
-    return "most recent pressure!";
+    return this.pressure;
   }
 }

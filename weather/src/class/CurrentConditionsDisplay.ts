@@ -15,9 +15,11 @@ export default class CurrentConditionDisplay
     w.registerObserver(this);
   }
 
-  update(temperature: number, humidity: number, pressure: number): void {
-    this.humidity = humidity;
-    this.temperature = temperature;
+  update(): void {
+    // need through getters rather than passing more and more
+    // data to them through the update() method.
+    this.humidity = this.weatherData.getHumidity();
+    this.temperature = this.weatherData.getTemperature();
     // There are better ways to design how the data gets displayed.
     // We will see some of them when we learn MVC pattern.
     // For now its ok!

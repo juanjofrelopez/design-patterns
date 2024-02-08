@@ -17,3 +17,10 @@ Publish-Subscribe Pattern !== Observer Pattern
 
 ### Design principle: Loosely coupled objects
 An object is tightly coupled with another when its too dependent on that one. This is with the porpouse of better handling change.
+
+
+
+It makes sense to let Observers retrieve the data they need rather than passing more and more data to them through the update() method.
+Updating the Weather Station code to allow Observers to pull the data they need is a pretty straightforward exercise. All we need to do is make sure the Subject has getter methods for its data, and then change our Observers to use them to pull the data that’s appropriate for their needs.
+
+When an Observer is notified of a change, it calls getter methods on the Subject to pull the values it needs.
