@@ -11,3 +11,4 @@ It's meant to learn both typescript and OOP design patterns.
 - Program to interfaces, not implementations.
 - Think at the pattern level, note the object level.
 - Strive for loosely coupled designs between object that interact.
+- Classes should be closed for modification and open to extension.
