@@ -5,7 +5,7 @@ export const enum ESize {
   "GRANDE",
   "VENTI",
 }
-export const sizeCosts: Record<TSize, number> = {
+export const milkSizeCosts: Record<TSize, number> = {
   TALL: 0.1,
   GRANDE: 0.15,
   VENTI: 0.2,

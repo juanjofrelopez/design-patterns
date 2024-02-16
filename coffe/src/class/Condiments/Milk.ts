@@ -1,6 +1,6 @@
 import Beverage from "../../interface/Beverage";
 import CondimentDecorator from "../../interface/CondimentDecorator";
-import { ESize, sizeCosts } from "../../constants";
+import { ESize, milkSizeCosts } from "../../constants";
 export default class Milk extends CondimentDecorator {
   constructor(b: Beverage) {
     super();
@@ -8,7 +8,7 @@ export default class Milk extends CondimentDecorator {
   }
 
   cost(): number {
-    return this.beverage.cost() + sizeCosts[this.beverage.getSize()];
+    return this.beverage.cost() + milkSizeCosts[this.beverage.getSize()];
   }
 
   getDescription(): string {
