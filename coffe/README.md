@@ -22,3 +22,10 @@ The new class is a child. It gets benefits coming with **inheritance**. It has a
 
 implements means:
 The new class can be treated as the same "shape", but it is not a child. It would be more for **polymorphism**. Polymorphism is the provision of a single interface to entities of different types.
+
+Even though we said we are gonna use composition over inheritance, in this project we use inheritance to achieve the **type matching** and not to get the behavior. It's vital that the **decorators have the same type** as the objects they are going to decorate. This is done by composing a decorator with a component (a decorator HAS A wrapped object).
+
+So if we need to inheritthe type, why are we using an abstract class and not an interface?
+
+1. Because it was legacy code and we try to not change existing code.
+2. An interface or an abstract class will work just fine.

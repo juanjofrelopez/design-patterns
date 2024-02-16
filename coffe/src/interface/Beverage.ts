@@ -1,8 +1,20 @@
+import { TSize } from "../constants";
+
 export default abstract class Beverage {
-  protected description: string;
+  protected description: string = "Unknown Beverage";
+  protected size: TSize = "TALL";
 
-  constructor() {}
+  public getDescription(): string {
+    return this.description;
+  }
 
-  abstract getDescription(): string;
-  abstract cost(): number;
+  public abstract cost(): number;
+
+  public getSize(): TSize {
+    return this.size;
+  }
+
+  public setSize(s: TSize): void {
+    this.size = s;
+  }
 }
