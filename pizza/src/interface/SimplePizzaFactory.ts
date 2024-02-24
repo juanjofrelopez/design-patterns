@@ -5,6 +5,4 @@ export default abstract class SimplePizzaFactory {
   constructor(p: Pizza) {
     this.pizza = p;
   }
-
-  public createPizza(): void {}
 }
