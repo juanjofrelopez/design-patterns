@@ -18,4 +18,8 @@ The factory has a reference to an abstract object. Each product needs to impleme
 
 The phrase "implements an interface" can either mean abstract class or interface. It refers to a concrete class implementing a method from a *supertype*.
 
+## Factory method
+Handles object creation and encapsulates it in a subclass.
+For example the class "PizzaStore" defines an abstract factory method called createPizza. It receives a type of pizza in case it has to select among different variations of the object. Each subclass of store is in charge of implementing the specifics of the creation of the object.
+This isolates (decouples) the client code in the superclass, from knowing what kind of concrete object is actually being created in the subclass.
 

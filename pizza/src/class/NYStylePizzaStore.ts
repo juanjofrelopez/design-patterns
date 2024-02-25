@@ -7,10 +7,8 @@ export default class NYStylePizzaStore extends PizzaStore {
     switch (type) {
       case "cheese":
         return new NYStyleCheesePizza();
-        break;
       default:
-        return undefined;
-        break;
+        return null;
     }
   }
 }
