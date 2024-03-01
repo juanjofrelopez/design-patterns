@@ -1,9 +1,8 @@
 import Pizza from "./Pizza";
 
 export default abstract class PizzaStore {
-  
-  public orderPizza(type: string): Pizza {
-    const pizza: Pizza = this.createPizza(type);
+  public orderPizza(type: string, toppings: string[]): Pizza {
+    const pizza: Pizza = this.createPizza(type, toppings);
     pizza.prepare();
     pizza.bake();
     pizza.cut();
@@ -11,5 +10,5 @@ export default abstract class PizzaStore {
     return pizza;
   }
 
-  public abstract createPizza(type: string): Pizza;
+  public abstract createPizza(type: string, toppings: string[]): Pizza;
 }

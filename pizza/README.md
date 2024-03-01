@@ -14,12 +14,16 @@ It's technically not a Design pattern but a programming idiom.
 The only part where there should be references to **concrete** object classes is in the factory.
 ```
 
-The factory has a reference to an abstract object. Each product needs to implement this abstract objct interface.
+The factory has a reference to an abstract object. Each product needs to implement this abstract object interface.
 
 The phrase "implements an interface" can either mean abstract class or interface. It refers to a concrete class implementing a method from a *supertype*.
 
-## Factory method
+## Factory Method Pattern
+```
+The Factory Method Pattern defines an interface for creating an object, but lets subclases decide which class to instantiate. Factory Method lets a class defer instantiation to subclases.
+```
 Handles object creation and encapsulates it in a subclass.
 For example the class "PizzaStore" defines an abstract factory method called createPizza. It receives a type of pizza in case it has to select among different variations of the object. Each subclass of store is in charge of implementing the specifics of the creation of the object.
 This isolates (decouples) the client code in the superclass, from knowing what kind of concrete object is actually being created in the subclass.
 
+### Object Dependencies
