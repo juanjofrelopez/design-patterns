@@ -12,3 +12,4 @@ It's meant to learn both typescript and OOP design patterns.
 - Think at the pattern level, note the object level.
 - Strive for loosely coupled designs between object that interact.
 - Classes should be closed for modification and open to extension.
+- Depend upon abstractions. Do not depend upon concrete classes. (Dependency Inversion Principle).
