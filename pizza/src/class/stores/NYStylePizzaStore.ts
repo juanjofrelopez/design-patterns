@@ -1,6 +1,6 @@
-import Pizza from "../interface/Pizza";
-import PizzaStore from "../interface/PizzaStore";
-import NYStyleCheesePizza from "./NYStyleCheesePizza";
+import Pizza from "../../interface/Pizza";
+import PizzaStore from "../../interface/PizzaStore";
+import NYStyleCheesePizza from "../pizza/NYStyleCheesePizza";
 
 export default class NYStylePizzaStore extends PizzaStore {
   public createPizza(type: string,toppings:string[]): Pizza {

@@ -32,4 +32,15 @@ When you directly instantiate an object you are depending on its concrete class.
 It suggest that our high-level components should not depend on the low-level components; rather, they should both depend on abstractions.
 A high level component is a class with behavior defined in terms of other low level components. For example a pizza store that directly instantiates concrete pizza classes in its orderPizza method. The solution would be to create an abstract class for Pizza so both the high and low level depend on this abstraction.
 
+#### guidelines to help us follow this principle
+* No variable should hold a reference to a concrete class. Use a factory to get around this.
+* No class should derive from a concrete class. You should NOT depend on concrete classes. Instead, derive from an abstraction (interface or abstract class).
+* No method should override an implemented method of any of its base classes.
 
+It's important to know that this are GUIDELINES. You have to see if your classes change (you have the factory method to encapsulate that change) or don't at all.
+
+# Abstract factory pattern
+- Abstract pizza ingredients factory
+- concrete region-specific pizza ingredient factory implements abstract pizza ingredients factory
+- this concrete ingredient factories uses concrete ingredient classes.
+how do we tie this to our pizza store code?

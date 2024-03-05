@@ -1,4 +1,4 @@
-import NYStylePizzaStore from "./class/NYStylePizzaStore";
+import NYStylePizzaStore from "./class/stores/NYStylePizzaStore";
 import PizzaStore from "./interface/PizzaStore";
 
 console.log("--------------PROGRAM STARTS HERE-----------");

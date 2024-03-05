@@ -10,5 +10,6 @@ export default abstract class PizzaStore {
     return pizza;
   }
 
+  // Factory method
   public abstract createPizza(type: string, toppings: string[]): Pizza;
 }
