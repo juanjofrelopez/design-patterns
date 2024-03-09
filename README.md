@@ -10,6 +10,7 @@ It's meant to learn both typescript and OOP design patterns.
 - Observer -> weather
 - Decorator -> coffe
 - Factory -> pizza
+- Singleton -> chocolate
 
 ## OOP Principles
 
