@@ -9,9 +9,11 @@ export default class NYPizzaIngredientFactory
   createCheese() {
     return new ReggianoCheese();
   }
+
   createDough() {
     return new ThinCrustDough();
   }
+
   createSauce() {
     return new MarinaraSauce();
   }

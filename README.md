@@ -4,6 +4,13 @@ This is a companion for the "Head first design pattern book".
 It's kind of a template project for future references.
 It's meant to learn both typescript and OOP design patterns.
 
+## Pattern index
+
+- Strategy -> duck
+- Observer -> weather
+- Decorator -> coffe
+- Factory -> pizza
+
 ## OOP Principles
 
 - Encapsulate what varies.
