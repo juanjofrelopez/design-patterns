@@ -8,4 +8,5 @@ export default class Singleton {
     }
     return Singleton.uniqueInstance;
   }
+  // other useful methods
 }

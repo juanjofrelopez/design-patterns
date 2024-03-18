@@ -8,7 +8,7 @@ export default class ChocolateBoiler {
     this.empty = true;
   }
 
-  public getInstance() {
+  public static getInstance(): ChocolateBoiler {
     if (ChocolateBoiler.uniqueChocolateBoilerInstance === null) {
       ChocolateBoiler.uniqueChocolateBoilerInstance = new ChocolateBoiler();
     }
@@ -19,6 +19,18 @@ export default class ChocolateBoiler {
     if (this.getEmpty) {
       this.empty = false;
       this.boiled = false;
+    }
+  }
+
+  public drain(): void {
+    if (!this.getEmpty() && this.getBoiled()) {
+      this.empty = true;
+    }
+  }
+
+  public boil(): void {
+    if (!!this.getEmpty() && !this.getBoiled()) {
+      this.boiled = true;
     }
   }
 
