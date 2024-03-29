@@ -11,6 +11,7 @@ It's meant to learn both typescript and OOP design patterns.
 - Decorator -> coffe
 - Factory -> pizza
 - Singleton -> chocolate
+- Command -> remote
 
 ## OOP Principles
 
