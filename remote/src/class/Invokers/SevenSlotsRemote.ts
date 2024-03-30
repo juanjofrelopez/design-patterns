@@ -4,6 +4,7 @@ import NoCommand from "../Commands/NoCommand";
 export default class SevenSlotsRemote {
   private onCommands: Command[];
   private offCommands: Command[];
+  private undoCommand: Command;
 
   constructor() {
     this.onCommands = new Array<Command>(7);
@@ -13,6 +14,7 @@ export default class SevenSlotsRemote {
       this.onCommands[i] = noCommand;
       this.offCommands[i] = noCommand;
     }
+    this.undoCommand = noCommand;
   }
 
   public setCommand(slot: number, onCommand: Command, offCommand: Command) {
@@ -22,10 +24,16 @@ export default class SevenSlotsRemote {
 
   public onButtonClick(slot: number) {
     this.onCommands[slot].execute();
+    this.undoCommand = this.onCommands[slot];
   }
 
   public offButtonClick(slot: number) {
     this.offCommands[slot].execute();
+    this.undoCommand = this.offCommands[slot];
+  }
+
+  public undoButtonClick() {
+    this.undoCommand.undo();
   }
 
   public toString() {
@@ -38,5 +46,6 @@ export default class SevenSlotsRemote {
         this.offCommands[i].constructor
       );
     }
+    console.log("undo cmd: ", this.undoCommand.constructor);
   }
 }
