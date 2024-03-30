@@ -71,3 +71,7 @@ Then we have to modify the invoker class to have arrays of functions for each sl
 - add the functionality to track the last button pressed in the remote controller. also add the undo button press.
 - each time a user presses a button, we record the command that was executed in the undo state.
 - then, when the undo button is pressed, the `undo()` method of the command is executed.
+
+## Macro Commands
+
+A macro command can execute other commands in order one at a time. Is a class that receives an array of commands to be executed sequentially.
