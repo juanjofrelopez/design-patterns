@@ -75,3 +75,32 @@ Then we have to modify the invoker class to have arrays of functions for each sl
 ## Macro Commands
 
 A macro command can execute other commands in order one at a time. Is a class that receives an array of commands to be executed sequentially.
+To undo, all the commands that were invoked in the macro must undo their previous actions.
+By putting all comands in an array, you can decide dinamically which commands you want to go into that macro. This is more elegant and requires less new code.
+
+## Dumb vs Smart commands
+
+dumb commands just invoke an execute function on a receiver.
+You could also implement all the logic inside the command to make it smarter. The disadvantage is that you loose decoupling between invoker and receiver and also loose the ability to parameterize your commands with receivers
+
+## Longer undo history
+
+You can keep track of more than one command by using a stack and popping the last one.
+
+## More uses of the command pattern: QUEUING commands
+
+Commands give us a way to package computation. This computation may be invoked long after the client created the command. Also it could be even run in another thread. This scenario can be applied to many other application such as:
+
+- schedulers
+- thread pools
+- job queues
+- etc
+
+If we take for example a job queue, the command enter on one side of the queue and a job scheduler takes them on the other, executes them and then take another.
+It just calls the `execute()` method as long as its of type command.
+The job queue classes are totally decoupled from the objects that are doing the computation.
+
+## More uses of the command pattern: Loging requests
+
+As we execute commands, we store a history of them and when a crash occurs, we reload the command objects and invoke their `execute()` method.
+This is particularlly useful in databases that invoke computation on large datastructures. Also in transactional systems where a transaction was done or not at all.

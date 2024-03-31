@@ -10,5 +10,9 @@ export default class MacroCommand implements Command {
       this.commands[i].execute();
     }
   }
-  undo(): void {}
+  undo(): void {
+    for (let i = 0; i < this.commands.length; i++) {
+      this.commands[i].undo();
+    }
+  }
 }
