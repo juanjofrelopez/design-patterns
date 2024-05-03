@@ -12,6 +12,8 @@ It's meant to learn both typescript and OOP design patterns.
 - Factory -> pizza
 - Singleton -> chocolate
 - Command -> remote
+- Adapter -> adapter
+- Facade -> facade
 
 ## OOP Principles
 
