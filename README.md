@@ -24,3 +24,10 @@ It's meant to learn both typescript and OOP design patterns.
 - Strive for loosely coupled designs between object that interact.
 - Classes should be closed for modification and open to extension.
 - Depend upon abstractions. Do not depend upon concrete classes. (Dependency Inversion Principle).
+- Least knowlede: talk only to your inmediate friends.
+
+## Tips and tricks
+
+- All principles should be used when they are helpful.
+- All design involves tradeoffs (abstraction vs speed, space vs time, etc).
+- Take all factors into account before applying principles.
