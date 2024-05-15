@@ -14,6 +14,7 @@ It's meant to learn both typescript and OOP design patterns.
 - Command -> remote
 - Adapter -> adapter
 - Facade -> facade
+- Template Method -> beverage
 
 ## OOP Principles
 
