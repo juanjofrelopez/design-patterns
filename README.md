@@ -15,6 +15,8 @@ It's meant to learn both typescript and OOP design patterns.
 - Adapter -> adapter
 - Facade -> facade
 - Template Method -> beverage
+- Iterator -> menues
+- Composite
 
 ## OOP Principles
 
