@@ -1,7 +1,8 @@
+import Menu from "../../interface/Menu";
 import MenuItem from "../../interface/MenuItem";
 import PancakeHouseMenuIterator from "./PancakeHouseMenuIterator";
 
-export default class PancakeHouseMenu {
+export default class PancakeHouseMenu implements Menu {
   public menuItems: Map<string, MenuItem>; // name -> menu item
 
   constructor() {

@@ -1,8 +1,9 @@
 import Iterator from "../../interface/Iterator";
+import Menu from "../../interface/Menu";
 import MenuItem from "../../interface/MenuItem";
 import DinerMenuIterator from "./DinerMenuIIterator";
 
-export default class DinerMenu {
+export default class DinerMenu implements Menu {
   public menuItems: MenuItem[];
   constructor() {
     this.menuItems = [];

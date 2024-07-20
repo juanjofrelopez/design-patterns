@@ -29,6 +29,7 @@ It's meant to learn both typescript and OOP design patterns.
 - Depend upon abstractions. Do not depend upon concrete classes. (Dependency Inversion Principle).
 - Least knowlede: talk only to your inmediate friends.
 - The hollywood principle: Don't call us, we'll call you. High level components decide when and how to call low level components.
+- The single responsibility principle: A class should have only one reason to change.
 
 ## Tips and tricks
 
