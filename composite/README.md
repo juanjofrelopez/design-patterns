@@ -25,3 +25,11 @@ A `client` uses the component interface to manipulate the objects in the composi
 - because leaves and nodes have different roles we can't always define a default implementation for each methods. in that case the best thing to do is to throw an exeption.
 - implement the `leaf` class
 - implement the `composite` class
+
+## Trade off
+
+By allowing the `component` class to provide functionality both for a child node and a leaf elements, we loose the adherance to the Single Responsibility Principle.
+
+Instead we get "transparency" because a client can treat both composites and leaf the same without knowing which type is.
+
+We also loose "safety" somehow because a client can opt to do composite operations on a leaf element.
