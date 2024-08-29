@@ -17,6 +17,7 @@ It's meant to learn both typescript and OOP design patterns.
 - Template Method -> beverage
 - Iterator -> menues
 - Composite
+- State -> gumball
 
 ## OOP Principles
 
